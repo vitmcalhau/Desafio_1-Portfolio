@@ -89,7 +89,7 @@ main section {
     margin: 0;
 }
 .image-text p {
-    font-size: 1.5vw;
+    font-size: 1.5em;
     margin: 0;
 }
 .image-text a {
@@ -143,6 +143,9 @@ main section {
         font-size: 5vw;
     }
     .image-text p{
+        font-size: 3vw;
+    }
+    .image-text a {
         font-size: 2vw;
     }
 }
