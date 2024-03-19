@@ -1,0 +1,46 @@
+.rodape {
+    /*background-color: #005066;*/
+    background: radial-gradient(circle, rgba(0,64,82,1) 0%, rgba(1,109,139,1) 100%);
+}
+.info-rodape {
+    text-align: center;
+    color: white;
+    padding: 2vw;
+}
+.info-rodape h1 {
+    margin-top: 0;
+}
+.info-rodape p {
+    font-size: 1.2em;
+}
+.info-rodape a img{
+    max-width: 4vw;
+    height: auto;
+    margin: 0.5vw;
+}
+.info-copyright {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    background-color: #00303D;
+}
+.info-copyright p {
+    margin: 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.info-copyright p:first-child {
+    margin-right: auto;
+}
+
+@media (max-width: 1568px) {
+    .info-rodape a img{
+        max-width: 6vw;
+    }
+}
+@media (max-width: 768px) {
+    .info-rodape a img{
+        max-width: 10vw;
+    }
+}
