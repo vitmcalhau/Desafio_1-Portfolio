@@ -30,8 +30,8 @@
     padding-left: 1vw;
     padding-right: 1vw;
 }
-.info-copyright p:first-child {
-    margin-right: auto;
+.info-copyright p:last-child {
+    margin-left: auto;
 }
 
 @media (max-width: 1568px) {
