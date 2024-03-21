@@ -24,4 +24,7 @@ main {
         font-weight: bold;
         margin: 0;
     }
+    .image-text p {
+        font-size: 1.5em;
+    }
 }

@@ -21,9 +21,11 @@
 .texto-entrada {
     margin-left: 2em;
     margin-right: 2em;
-    text-align: justify;
 }
 .texto-entrada h1 {
     color: #005066;
     margin: 0;
+}
+.texto-entrada p {
+    text-align: justify;
 }
