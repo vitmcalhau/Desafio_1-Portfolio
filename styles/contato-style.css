@@ -1,0 +1,114 @@
+label {
+    display: block;
+    margin-bottom: 0.3em;
+    color: #004052;
+    font-size: 1.2em;
+}
+input, textarea {
+    width: 100%;
+    height: 1.3em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #005066;
+}
+textarea {
+    height: 15vh;
+    font-size: 1.5em;
+}
+form button {
+    background-color: #fff;
+    color: #fff;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 1em;
+    border: medium solid #005066;
+    color: #005066;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 2em auto;
+}
+.form-container h2 {
+    margin-left: 0;
+    color: #004052;
+}
+.linha-form {
+    margin: 1em 0;
+}
+
+.image-text h1 {
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0;
+}
+.image-text p {
+    font-size: 2em;
+    margin: 0;
+}
+
+.info-contato,
+.redes-contato {
+    margin-top: 2em;
+}
+.links-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #004052;
+}
+.links-contato ul {
+    list-style: none;
+    font-size: 1.2em;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.flex-container a {
+    margin: 0 1em;
+}
+.inner-container {
+    text-align: center;
+    aspect-ratio: 1 / 1;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    cursor: pointer;
+}
+.inner-container img {
+    max-width: 4em;
+    height: auto;
+    margin: 0.1em;
+}
+.inner-container p {
+    margin: 0.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #005066;
+    color: #fff;
+}
+.inner-container:hover {
+    transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 1em;
+    }
+    .image-text h1 {
+        font-size: 3em;
+        font-weight: bold;
+        margin: 0;
+    }
+    .image-text p {
+        font-size: 1.5em;
+    }
+}

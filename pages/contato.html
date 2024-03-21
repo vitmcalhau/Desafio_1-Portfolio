@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/menu-style.css">
+    <link rel="stylesheet" href="../styles/rodape-style.css">
+    <link rel="stylesheet" href="../styles/general-style.css">
+    <link rel="stylesheet" href="../styles/contato-style.css">
+    <script src="../scipts/navbar.js"></script>
+    <title>VMC - Contato</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="menu-lista">
+            <li class="menu-item"><a href="./index.html">Principal</a></li>
+            <li class="menu-item"><a href="./formacao.html">Formação</a></li>
+            <li class="menu-item"><a href="./atuacao.html">Atuação</a></li>
+            <li class="menu-item"><a href="#">Portfólio</a></li>
+            <li class="menu-item"><a href="./contato.html" class="active">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container-capa">
+        <img class="bg-image" src="../images/contato.jpg">
+        <div class="image-text">
+            <h1 id="nome-imagem">Contato</h1>
+            <p>Entre em contato pelas redes sociais ou formulário</p>
+        </div>
+    </div>
+    <main>
+        <section class="links-contato">
+            <div class="info-contato">
+                <h2>Informações</h2>
+                <ul>
+                    <li><strong>Email: </strong>vitmelocalhau@gmail.com</li>
+                    <li><strong>Telefone: </strong>(19) 99915-6925</li>
+                </ul>
+            </div>
+            <div class="redes-contato">
+                <h2>Redes sociais</h2>
+                <div class="flex-container">
+                    <a href="https://www.linkedin.com/in/vitor-melo-calhau" target="_blank">
+                        <div class="inner-container">
+                            <img src="../icons/linkedin.png">
+                        </div>
+                    </a>
+                    <a href="https://wa.me/5519999156925" target="_blank">
+                        <div class="inner-container">
+                            <img src="../icons/whatsapp.png">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="form-container">
+            <h2>Formulário</h2>
+                <form action="#" method="post" autocomplete="off">
+                    <div class="linha-form">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="linha-form">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="linha-form">
+                        <label for="msg">Mensagem</label>
+                        <textarea id="msg" name="msg" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="info-rodape">
+            <h1>Ficou interessado?</h1>
+            <p>Contate-me nas redes sociais</p>
+            <a href="https://www.linkedin.com/in/vitor-melo-calhau" target="_blank"><img src="../icons/linkedin.png"></a>
+            <a href="mailto:vitmelocalhau@gmail.com" target="_blank"><img src="../icons/gmail.png"></a>
+            <a href="https://wa.me/5519999156925" target="_blank"><img src="../icons/whatsapp.png"></a>
+        </div>
+        <div class="info-copyright">
+            <p>Copyright &copy; 2024 Vítor de Melo Calhau</p>
+        </div>
+    </footer>
+</body>
+</html>
