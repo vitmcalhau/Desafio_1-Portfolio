@@ -1,0 +1,96 @@
+.projeto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 900px;
+    margin: 3em auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.imagem-projeto {
+    width: 30%;
+    margin: 1em;
+}
+.imagem-projeto img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.info-projeto {
+    margin: 1em;
+    width: 70%;
+    color: #005066;
+}
+.info-projeto h2 {
+    margin: 0;
+}
+.descricao {
+    text-align: justify;
+    margin-right: 1em;
+}
+.tecnologias {
+    width: 100%;
+}
+.tecnologias a,
+.tecnologias h4 {
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.repositorio a {
+    margin: 0.5em 0;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    font-weight: 600;
+    color: #005066;
+    border: medium solid #005066;
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border-radius: 50px;
+}
+
+.image-text h1 {
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0;
+}
+.image-text p {
+    font-size: 2em;
+    margin: 0;
+}
+
+.button:hover {
+    background-color: #005066;
+    border-color: #005066;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .projeto {
+        margin: 1em;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .imagem-projeto,
+    .info-projeto {
+        width: auto;
+    }
+    .imagem-projeto img{
+        max-width: 100%;
+        height: auto;
+    }
+    .image-text h1 {
+        font-size: 3em;
+        font-weight: bold;
+        margin: 0;
+    }
+    .image-text p {
+        font-size: 1.5em;
+    }
+}

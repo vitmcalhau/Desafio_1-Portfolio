@@ -103,6 +103,9 @@ form button:hover {
     .form-container {
         padding: 1em;
     }
+    .links-contato {
+        margin: 0 1em;
+    }
     .image-text h1 {
         font-size: 3em;
         font-weight: bold;

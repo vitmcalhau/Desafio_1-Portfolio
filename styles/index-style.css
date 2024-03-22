@@ -91,13 +91,16 @@ main section {
     border: medium solid #005066;
 }
 
-#face-image {
+.face-container {
     position: absolute;
     top: 50%;
     left: 60%;
-    width: 25%;
     transform: translateY(-50%);
-    max-width: 90%;
+    border: 10px solid white;
+}
+
+#face-image {
+    max-width: 100%;
     height: auto;
 }
 
