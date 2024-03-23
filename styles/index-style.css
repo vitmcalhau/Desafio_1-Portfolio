@@ -108,15 +108,23 @@ main section {
     main {
         width: 100%;
     }
+    .about .inner-container,
+    .skills .inner-container {
+        width: 6em;
+        margin: 0.5em;
+    }
+    .inner-container p {
+        font-size: 1em;
+    }
     .image-text {
         width: 50%;
         left: 5%;
     }
     .image-text h1{
-        font-size: 5vw;
+        font-size: 2em;
     }
     .image-text p{
-        font-size: 3vw;
+        font-size: 1em;
     }
     .image-text a {
         font-size: 2vw;
