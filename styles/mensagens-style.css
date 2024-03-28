@@ -30,7 +30,7 @@ main > section {
     border: medium solid red;
     border-radius: 50px;
     cursor: pointer;
-    /* Desabilitar seleção de texto */
+    /* Desabilitar selecao de texto */
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;

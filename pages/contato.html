@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../styles/rodape-style.css">
     <link rel="stylesheet" href="../styles/general-style.css">
     <link rel="stylesheet" href="../styles/contato-style.css">
-    <script src="../scipts/navbar.js"></script>
+    <script src="../scipts/navbar.js" defer></script>
+    <script src="../scipts/formulario.js" defer></script>
     <title>VMC - Contato</title>
 </head>
 <body>
@@ -61,7 +62,7 @@
                 <h2>Formulário</h2>
                 <a href="./mensagens.html" class="button">Ver mensagens</a>
             </div>
-                <form action="#" method="post" autocomplete="off">
+                <form id="form-contato" autocomplete="off">
                     <div class="linha-form">
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" name="nome" required>
@@ -74,7 +75,7 @@
                         <label for="msg">Mensagem</label>
                         <textarea id="msg" name="msg" required></textarea>
                     </div>
-                    <button type="submit">Enviar</button>
+                    <button type="submit" id="btn-submit">Enviar</button>
                 </form>
         </section>
     </main>
