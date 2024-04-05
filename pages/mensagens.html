@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="../styles/menu-style.css">
     <link rel="stylesheet" href="../styles/rodape-style.css">
     <link rel="stylesheet" href="../styles/general-style.css">
-    <link rel="stylesheet" href="../styles/atuacao-style.css">
-    <link rel="stylesheet" href="../styles/linha-tempo.css">
+    <link rel="stylesheet" href="../styles/mensagens-style.css">
     <script src="../scipts/navbar.js" defer></script>
-    <title>VMC - Atuação</title>
+    <script src="../scipts/listar-mensagens.js" defer></script>
+    <title>VMC - Mensagens</title>
 </head>
 <body>
     <nav class="navbar">
@@ -19,39 +19,22 @@
         <ul class="menu-lista">
             <li class="menu-item"><a href="./index.html">Principal</a></li>
             <li class="menu-item"><a href="./formacao.html">Formação</a></li>
-            <li class="menu-item"><a href="./atuacao.html" class="active">Atuação</a></li>
+            <li class="menu-item"><a href="./atuacao.html">Atuação</a></li>
             <li class="menu-item"><a href="./portfolio.html">Portfólio</a></li>
             <li class="menu-item"><a href="./tecnologias.html">Tecnologias</a></li>
             <li class="menu-item"><a href="./contato.html">Contato</a></li>
         </ul>
     </nav>
-    <div class="container-capa">
-        <img class="bg-image" src="../images/escritorio.jpg">
-        <div class="image-text">
-            <h1 id="nome-imagem">Atuação</h1>
-            <p>Profissional</p>
-        </div>
-    </div>
     <main>
         <section>
-            <div class="linha-tempo">
-                <div class="entrada-linha">
-                    <div class="data-entrada">Presente<br>2022</div>
-                    <div class="texto-entrada">
-                        <h1>Desenvolvimento de soluções digitais</h1>
-                        <p>Prestação de serviços envolvendo criação de programas em Visual Basic Excel, automatização de planilhas,
-                            dentre outros
-                        </p>
-                    </div>
-                </div>
-                <div class="entrada-linha">
-                    <div class="data-entrada">2021<br>2021</div>
-                    <div class="texto-entrada">
-                        <h1>Estágio em Informática</h1>
-                        <p>Contrato de 12 meses em Tetra Pak&reg;, para estágio envolvendo, entre outros, identificação de problemas e 
-                            proposição e criação de soluções utilizando programação</p>
-                    </div>
-                </div>
+            <div class="container-titulo">
+                <h1>Mensagens<br>de contato</h1>
+                <div id="btnExcluir">Excluir mensagens</div>
+            </div>
+            <hr>
+            <div class="flex-container" id="container-mensagens"></div>
+            <div id="sem-mensagens" style="visibility: hidden;">
+                <p>Nenhuma mensagem armazenada para mostrar</p>
             </div>
         </section>
     </main>
@@ -64,7 +47,6 @@
             <a href="https://wa.me/5519999156925" target="_blank"><img src="../icons/whatsapp.png"></a>
         </div>
         <div class="info-copyright">
-            <p>Imagem de vecstock no Freepik</p>
             <p>Copyright &copy; 2024 Vítor de Melo Calhau</p>
         </div>
     </footer>

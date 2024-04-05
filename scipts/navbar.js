@@ -12,8 +12,6 @@ if (currentScroll > lastScroll) {
 lastScroll = currentScroll <= 0 ? 0 : currentScroll;
 }, false);
 
-window.onload = () => {
-    document.querySelector('.menu-compacto').addEventListener('click', function() {
-        document.querySelector('.menu-lista').classList.toggle('dropdown');
-    });
-}
+document.querySelector('.menu-compacto').addEventListener('click', function() {
+    document.querySelector('.menu-lista').classList.toggle('dropdown');
+});
