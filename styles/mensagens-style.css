@@ -2,6 +2,9 @@ html, h1, h3 {
     margin: 0;
     padding: 0;
 }
+main {
+    min-height: 600px;
+}
 main > section {
     max-width: 800px;
     margin: 5rem auto 2rem auto;
@@ -17,8 +20,12 @@ main > section {
 .container-titulo > h1 {
     font-size: 5rem;
     color: #00303d;
+    user-select: none;
 }
 
+#sem-mensagens > p {
+    text-align: center;
+}
 #btnExcluir {
     height: auto;
     text-align: center;
@@ -63,4 +70,11 @@ main > section {
 }
 .inner-container > p {
     color: #00708f;
+}
+
+@media (max-width: 768px) {
+    .container-titulo > h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
 }

@@ -10,14 +10,7 @@ class Mensagem {
     }
 }
 
-document.getElementById("form-contato").addEventListener("submit", (e) => {
-    const nome = inputNome.value;
-    const email = inputEmail.value;
-    const msg = inputMensagem.value;
-
-    // cria objeto com informacoes da mensagem
-    const mensagem = new Mensagem(nome, email, msg);
-    // recupera vetor de mensagens armazenadas
+function salvarMensagem(mensagem) {
     const mensagens = localStorage.getItem("mensagens");
     let vetorMensagens;
     if (mensagens) {
@@ -27,4 +20,16 @@ document.getElementById("form-contato").addEventListener("submit", (e) => {
     }
     vetorMensagens[vetorMensagens.length] = mensagem;
     localStorage.setItem("mensagens", JSON.stringify(vetorMensagens));
+}
+
+document.getElementById("form-contato").addEventListener("submit", (e) => {
+    const nome = inputNome.value;
+    const email = inputEmail.value;
+    const msg = inputMensagem.value;
+
+    // cria objeto com informacoes da mensagem
+    const mensagem = new Mensagem(nome, email, msg);
+    // salva nova mensagem
+    salvarMensagem(mensagem);
+    alert("Mensagem enviada");
 });
